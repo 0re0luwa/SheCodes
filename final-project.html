@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        display: inline;
+      }
+      button {
+        margin: 20px 30px 20px 30px;
+        padding: 15px 20px;
+        color: black;
+        background: transparent;
+        font-size: 18px;
+        border: 1px solid #885df1;
+        border-radius: 27px;
+        box-shadow: 1px 5px 5px #d6d3dd;
+        transition: all 150ms ease-in-out;
+        font-family: serif;
+      }
+      button:hover {
+        background: #885df1;
+        color: white;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: purple;
+        font-size: large;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+      div {
+        border: 1px solid black;
+        margin: 20px 100px;
+        border-radius: 57px;
+        background: radial-gradient(
+          circle at 11.7% 80.6%,
+          rgb(249, 185, 255) 0%,
+          rgb(177, 172, 255) 49.3%,
+          rgb(98, 203, 255) 89%
+        );
+      }
+      img {
+        border: 1px transparent;
+        border-radius: 20px;
+        margin: 10px 5px;
+      }
+      h1 {
+        color: #6b206a;
+        font-size: 50px;
+      }
+      h2 {
+        color: blueviolet;
+        font-family: cursive;
+      }
+      body {
+        background: linear-gradient(
+          178.6deg,
+          rgb(232, 245, 253) 3.3%,
+          rgb(252, 253, 255) 109.6%
+        );
+        font-size: larger;
+      }
+      .try {
+        font-size: 40px;
+      }
+      .what {
+        font-size: 30px;
+      }
+      .why {
+        font-size: 30px;
+      }
+      .where {
+        font-size: 30px;
+      }
+      p {
+        font-size: 30px;
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+   <!-- <div> -->
+      <h1><strong>The Beauty of Anime</strong></h1>
+      <h2><em>Especially Action Anime</em> 😊</h2>
+      <hr />
+      <ul>
+        <li>
+          <button class="what"><strong>What</strong></button>
+        </li>
+        <li>
+          <button class="why"><strong>Why</strong></button>
+        </li>
+        <li>
+          <button class="where"><strong>Where</strong></button>
+        </li>
+      </ul>
+      <hr />
+      <img
+        src="https://i.pinimg.com/originals/7e/cf/c5/7ecfc589c9cadf349e33de9b4a4a4f5c.png"
+        alt="Anime characters"
+        width="900"
+        height="900"
+      />
+      <p>
+        Anime is characterized as an art that comprises of various genres that
+        is made or influenced by Japanese media. Not to be mistaked for
+        cartoons, the art style of anime is quite distinct and easily
+        identifiable. I enjoy watching anime because, although just animation,
+        it brings up emotions that any movie or tv shows can't. If you are
+        interested in what I think of anime the buttons above would give a
+        clearer explanation.
+      </p>
+      <br />
+      <p>
+        A cool video on what anime looks like
+        </p>>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UtBx3WnMFEE?si=K82xG_Auabd4jYNV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <br />
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Anime#:~:text=It%20is%20classified%20into%20numerous%20genres%20targeting%20various,and%20other%20forms%20of%20imaginative%20and%20individualistic%20techniques."
+        target="_blank"
+        ><em>Learn more about the Anime History</em>
+      </a>
+      <br />
+      <button class="try"><strong>Try Watching an Anime</strong></button>
+      <script>
+        function watchAnime() {
+          let name = prompt("What is your name");
+          let genre = prompt(
+            "Hey " +
+              name +
+              ", please choose a genre you prefer from the following options: Action, Romance, and Fantasy"
+          )
+            .toLowerCase()
+            .trim();
+          if (genre === "action") {
+            alert("I would recomend watching 'My Hero Academia' to start off.");
+          } else if (genre === "romance") {
+            alert(
+              "I would recommend watching 'Blue Spring Ride' to start off."
+            );
+          } else if (genre === "fantasy") {
+            alert(
+              "I would recommend watching 'That Time I got Reincarnated as a Slime' to start off."
+            );
+          } else {
+            alert(
+              "I would recommend watching 'Fullmetal Alchemist: Brotherhood' if none of the preferred genres are to your taste."
+            );
+          }
+        }
+        let tryAnimeButton = document.querySelector(".try");
+        tryAnimeButton.addEventListener("click", watchAnime);
+
+        function what() {
+          alert(
+            "What makes me watch anime is that it has the best animations and story plots I have ever seen. And I love predicting how a movie or show ends but I came to the quick realization that I could almost never predict anything when watchiing an anime which makes watching it more enjoyable."
+          );
+        }
+
+        let whatButton = document.querySelector(".what");
+        whatButton.addEventListener("click", what);
+
+        function why() {
+          alert(
+            "Why watch anime? One major reason is the plot which always mange to amaze me. It also has a lot of cultural knowlegde and helps expand my imagination. It has some of the best music and it is generally colorful and visually appealling. And last of all, it helps lift up my mood when I am having a bad day."
+          );
+        }
+
+        let whyButton = document.querySelector(".why");
+        whyButton.addEventListener("click", why);
+
+        function where() {
+          let question = prompt(
+            "Would you like to know a good website to watch anime. Please answer yes or no"
+          )
+            .toLowerCase()
+            .trim();
+          if (question === "yes") {
+            alert(
+              "zoro.to is a good website to watch any anime you are interested in."
+            );
+          } else if (question === "no") {
+            alert("Thanks for taking the time to answer the question.");
+          } else {
+            alert("Please choose yes or no.");
+          }
+        }
+
+        let whereButton = document.querySelector(".where");
+        whereButton.addEventListener("click", where);
+      </script>
+    <!--</div> -->
+  </body>
+</html>
